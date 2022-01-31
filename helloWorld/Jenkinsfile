@@ -3,5 +3,6 @@
 node() {
     stage("Greet") {
         echo 'Hello World'
+        sleep 3600
     }
 }
