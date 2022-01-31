@@ -66,6 +66,7 @@ pipeline {
       }
       steps {
         container('kaniko') {
+          sleep 7200
           sh KANIKO_INIT_SCRIPT
           sh KANIKO_RUN_SCRIPT
         }
